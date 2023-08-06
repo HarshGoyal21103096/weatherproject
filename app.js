@@ -26,7 +26,7 @@ app.post("/",function(req,res){
             const cityname=req.body.cityName;
             const imageurl="http://www.openweathermap.org/img/wn/" + icon + "@2x.png";
             // res.write("<p>The weather is currently " + weatherdescription + ".<p>");
-            // res.write("<p>The temperature in " + req.body.cityName + " is " + temp + " degrees Celcius.<p>");
+            // res.write("<p>The temperature in " + req.body.cityName + " is " + temp + " degrees Celsius.<p>");
             // res.write("<img src=" + imageurl + ">");
             // res.send();
             res.render("success",{imageurl:imageurl,weatherdescription:weatherdescription,temp:temp,cityname:cityname});
